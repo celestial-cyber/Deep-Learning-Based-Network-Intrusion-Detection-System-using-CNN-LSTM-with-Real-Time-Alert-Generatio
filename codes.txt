@@ -21,6 +21,13 @@ git commit -m "initial commit"
 git branch -M main
 git push -u origin main
 
+git rm --cached Dataset/Tuesday-WorkingHours.pcap_ISCX.csv
+
+git reset --soft HEAD~1
+
+
+
+
 
 //reuired output 
 =============================
