@@ -1,0 +1,46 @@
+git push -u origin main
+
+git pull origin main --rebase
+
+git gc --prune=now
+
+
+git repack -ad
+
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+
+
+git remote -v
+git remote remove origin
+git remote add origin https://github.com/celestial-cyber/Deep-Learning-Based-Network-Intrusion-Detection-System-using-CNN-LSTM-with-Real-Time-Alert-Generatio.git
+
+
+git add .
+git commit -m "initial commit"
+git branch -M main
+git push -u origin main
+
+
+//reuired output 
+=============================
+NETWORK SECURITY ALERT
+=============================
+Status      : ATTACK DETECTED
+Type        : IoT Traffic Anomaly
+Severity    : HIGH
+Confidence  : 0.93
+
+Source IP   : 192.168.1.10
+Target      : IoT Gateway
+Action      : Block / Monitor
+
+Time        : 2026-06-16 10:42:11
+========================================================
+
+
+
+Attack values 
+3474
+
+
